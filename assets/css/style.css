@@ -38,9 +38,6 @@ strong {
   height: 1%; }
 
 .clearfix {
-  display: block; }
-
-.clearfix {
   display: inline-block; }
 
 .row:before,
@@ -58,16 +55,20 @@ strong {
   padding: 0 15px;
   margin-right: auto;
   margin-left: auto; }
+  .container:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media (min-width: 768px) {
+    .container {
+      width: 750px; } }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px; } }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px; } }
 
-@media (min-width: 768px) {
-  .container {
-    width: 750px; } }
-@media (min-width: 992px) {
-  .container {
-    width: 970px; } }
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px; } }
 header {
   background: url("https://i.imgur.com/8IYtq2W.jpg"); }
 
