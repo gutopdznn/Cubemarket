@@ -2,4 +2,13 @@
 
 {% block content %}
 	<h1>Loja</h1>
+	{% for category in categories %}
+		<div class="category">
+        	<h2>{{ category.NAME }}</h2>
+        	<p>{{ category.DESCRIPTION }}</p>
+        	<a href="/loja/categoria/{{ category.ID }}">
+        		Ver produtos
+        	</a>
+		</div>
+    {% endfor %}
 {% endblock %}
