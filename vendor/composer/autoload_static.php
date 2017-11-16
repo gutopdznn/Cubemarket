@@ -39,6 +39,7 @@ class ComposerStaticInit67b9c3ddbf19706b3c6a8d8501de3b24
         'Index' => __DIR__ . '/../..' . '/controllers/index.php',
         'Input' => __DIR__ . '/../..' . '/libs/Input.php',
         'Json' => __DIR__ . '/../..' . '/libs/Json.php',
+        'Loja' => __DIR__ . '/../..' . '/controllers/loja.php',
         'Model' => __DIR__ . '/../..' . '/libs/Model.php',
         'Redirect' => __DIR__ . '/../..' . '/libs/Redirect.php',
         'Session' => __DIR__ . '/../..' . '/libs/Session.php',

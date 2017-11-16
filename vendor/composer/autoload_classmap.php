@@ -14,6 +14,7 @@ return array(
     'Index' => $baseDir . '/controllers/index.php',
     'Input' => $baseDir . '/libs/Input.php',
     'Json' => $baseDir . '/libs/Json.php',
+    'Loja' => $baseDir . '/controllers/loja.php',
     'Model' => $baseDir . '/libs/Model.php',
     'Redirect' => $baseDir . '/libs/Redirect.php',
     'Session' => $baseDir . '/libs/Session.php',

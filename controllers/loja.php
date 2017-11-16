@@ -43,4 +43,28 @@ Class Loja extends Controller
 
 	}
 
+	public function produto($id = false)
+	{
+		if(!$id)
+		{
+			URL::redirect('/loja');
+		}
+		if(!$this->model->productExists($id))
+		{
+			URL::redirect('/loja');
+		}
+
+		$product = $this->model->getProduct($id);
+
+		$this->assign([
+			'page' => [
+				'title' => $product->NAME,
+			],
+			'product' => $product,
+		]);
+
+		$this->view('loja.produto');
+
+	}
+
 }

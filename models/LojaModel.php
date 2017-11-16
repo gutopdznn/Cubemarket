@@ -29,4 +29,18 @@ Class LojaModel extends Model
 	{
 		return $this->select('cube_products', ['CATEGORY', '=', $id])->results();
 	}
+
+	public function productExists($id)
+	{
+		if($this->select('cube_products', ['ID', '=', $id])->count() > 0)
+		{
+			return true;
+		}
+		return false;
+	}
+
+	public function getProduct($id)
+	{
+		return $this->select('cube_products', ['ID', '=', $id])->first();
+	}
 }

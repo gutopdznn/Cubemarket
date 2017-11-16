@@ -4,6 +4,7 @@
 	<h1>Loja</h1>
 	{% for product in products %}
 		<div class="product">
+            <img src="{{ product.IMAGE }}" alt="{{ product.NAME }}">
         	<h2>{{ product.NAME }}</h2>
         	<p>{{ product.DESCRIPTION }}</p>
         	<a href="/loja/produto/{{ product.ID }}">
