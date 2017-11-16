@@ -171,6 +171,8 @@ strong {
   color: #FFF;
   margin: 0 20px 20px 0; }
   .loja__sidebar--title {
+    display: block;
+    color: #fff;
     border-radius: 5px 5px 0 0;
     background: #0747A6;
     padding: 16px; }

@@ -10,9 +10,7 @@
 			<div class="col-4">
 				{% for category in categories %}
 					<div class="loja__sidebar">
-						<div class="loja__sidebar--title">
-							{{ category.NAME }}
-						</div>
+						<a href="/loja/categoria/{{ category.ID }}" class="loja__sidebar--title">{{ category.NAME }}</a>
 						<div class="loja__sidebar--products">
 							{% for product in category.products %}
 								<a href="/loja/produto/{{ product.ID }}">{{ product.NAME }}</a>
