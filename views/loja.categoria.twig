@@ -1,15 +1,42 @@
 {% extends 'layouts/default.twig' %}
 
 {% block content %}
-	<h1>Loja</h1>
-	{% for product in products %}
-		<div class="product">
-			<img src="{{ product.IMAGE }}" alt="{{ product.NAME }}">
-			<h2>{{ product.NAME }}</h2>
-			<p>{{ product.DESCRIPTION }}</p>
-			<a href="/loja/produto/{{ product.ID }}">
-				Comprar
-			</a>
+	<div class="loja">
+		<div class="loja__headline">
+			<h1>{{ category.NAME }}</h1>
+			<p>{{ category.DESCRIPTION }}</p>
 		</div>
-	{% endfor %}
+		<div class="row">
+			<div class="col-4">
+				{% for category in categories %}
+					<div class="loja__sidebar">
+						<div class="loja__sidebar--title">
+							{{ category.NAME }}
+						</div>
+						<div class="loja__sidebar--products">
+							{% for product in category.products %}
+								<a href="/loja/produto/{{ product.ID }}">{{ product.NAME }}</a>
+							{% endfor %}
+						</div>
+					</div>
+				{% endfor %}
+			</div>
+			<div class="col-8">
+				<div class="loja__products">
+					{% for product in products %}
+						<div class="col-6">
+							<div class="product">
+								<img src="{{ product.IMAGE }}" alt="{{ product.NAME }}">
+								<h2>{{ product.NAME }}</h2>
+								<p>{{ product.DESCRIPTION }}</p>
+								<a href="/loja/produto/{{ product.ID }}">
+									Comprar
+								</a>
+							</div>
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
 {% endblock %}

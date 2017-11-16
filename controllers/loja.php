@@ -35,8 +35,11 @@ Class Loja extends Controller
 			'page' => [
 				'title' => $category->NAME,
 			],
+
 			'category' => $category,
 			'products' => $this->model->getProductsByCategory($id),
+
+			'categories' => $this->model->getCategoriesWithProducts(),
 		]);
 
 		$this->view('loja.categoria');

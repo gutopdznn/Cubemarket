@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Proxima Nova", sans-serif; }
+  font-family: sans-serif; }
 
 body {
   height: 100%;
@@ -11,7 +11,6 @@ body {
   flex-direction: column; }
 
 html {
-  background: #fff;
   position: relative;
   min-height: 100%; }
 
@@ -49,7 +48,6 @@ strong {
   clear: both; }
 
 .container {
-  padding: 0 15px;
   margin-right: auto;
   margin-left: auto; }
   .container:after {
@@ -99,44 +97,95 @@ strong {
         .header__menu--item a:hover {
           background: rgba(9, 30, 66, 0.04); }
 
+.content {
+  margin: 20px 0;
+  margin-right: auto;
+  margin-left: auto; }
+  .content:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .content:before {
+    content: "";
+    display: table; }
+  @media (min-width: 768px) {
+    .content {
+      width: 750px; } }
+  @media (min-width: 992px) {
+    .content {
+      width: 970px; } }
+  @media (min-width: 1200px) {
+    .content {
+      width: 1170px; } }
+
 [class*="col-"] {
   float: left;
   margin-bottom: 20px; }
 
-.grid-1 {
+.col-1 {
   width: 8.3333333333%; }
 
-.grid-2 {
+.col-2 {
   width: 16.6666666667%; }
 
-.grid-3 {
+.col-3 {
   width: 25%; }
 
-.grid-4 {
+.col-4 {
   width: 33.3333333333%; }
 
-.grid-5 {
+.col-5 {
   width: 41.6666666667%; }
 
-.grid-6 {
+.col-6 {
   width: 50%; }
 
-.grid-7 {
+.col-7 {
   width: 58.3333333333%; }
 
-.grid-8 {
+.col-8 {
   width: 66.6666666667%; }
 
-.grid-9 {
+.col-9 {
   width: 75%; }
 
-.grid-10 {
+.col-10 {
   width: 83.3333333333%; }
 
-.grid-11 {
+.col-11 {
   width: 91.6666666667%; }
 
-.grid-12 {
+.col-12 {
   width: 100%; }
+
+.loja__headline {
+  background: #0747A6;
+  color: #FFF;
+  border: 1px solid #0747A6;
+  border-radius: 5px;
+  padding: 4vh;
+  margin: 0 0 20px 0; }
+.loja__sidebar {
+  border-radius: 5px;
+  border: 1px solid #0747A6;
+  color: #FFF;
+  margin: 0 20px 20px 0; }
+  .loja__sidebar--title {
+    border-radius: 5px 5px 0 0;
+    background: #0747A6;
+    padding: 16px; }
+  .loja__sidebar--products a {
+    display: block;
+    padding: 16px;
+    color: #0747A6; }
+    .loja__sidebar--products a:hover span {
+      border-bottom: 1px solid #0747A6; }
+.loja__products .col-6 .product {
+  margin: 0 20px 0 0;
+  border: 1px solid #0747A6;
+  border-radius: 5px;
+  padding: 20px; }
+.loja__products .col-6:nth-child(2n) .product {
+  margin: 0 0 0 0; }
 
 /*# sourceMappingURL=style.css.map */

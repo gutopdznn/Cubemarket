@@ -1,0 +1,37 @@
+.loja
+	+e('headline')
+		background: #0747A6
+		color: #FFF
+		border: 1px solid #0747A6
+		border-radius: 5px
+		padding: 4vh
+		margin: 0 0 20px 0
+
+	+e('sidebar')
+		border-radius: 5px
+		border: 1px solid #0747A6
+		color: #FFF
+		margin: 0 20px 20px 0
+		+m('title')
+			border-radius: 5px 5px 0 0
+			background: #0747A6
+			padding: 16px
+		+m('products')
+			a
+				display: block
+				padding: 16px
+				color: #0747A6
+				&:hover
+					span
+						border-bottom: 1px solid #0747A6
+
+	+e('products')
+		.col-6
+			.product
+				margin: 0 20px 0 0
+				border: 1px solid #0747A6
+				border-radius: 5px
+				padding: 20px
+			&:nth-child(2n)
+				.product
+					margin: 0 0 0 0

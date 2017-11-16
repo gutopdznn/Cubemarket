@@ -43,4 +43,14 @@ Class LojaModel extends Model
 	{
 		return $this->select('cube_products', ['ID', '=', $id])->first();
 	}
+
+	public function getCategoriesWithProducts()
+	{
+		$sth = $this->select('cube_categories')->results();
+		foreach ($sth as $category)
+		{
+			$category->products = $this->select('cube_products', ['CATEGORY', '=', $category->ID])->results();
+		}
+		return $sth;
+	}
 }

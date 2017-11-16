@@ -1,14 +1,16 @@
 {% extends 'layouts/default.twig' %}
 
 {% block content %}
-	<h1>Loja</h1>
-	{% for category in categories %}
-		<div class="category">
-        	<h2>{{ category.NAME }}</h2>
-        	<p>{{ category.DESCRIPTION }}</p>
-        	<a href="/loja/categoria/{{ category.ID }}">
-        		Ver produtos
-        	</a>
-		</div>
-    {% endfor %}
+	<div class="loja">
+		<h1 class="loja__headline">Loja</h1>
+		{% for category in categories %}
+			<div class="category">
+				<h2>{{ category.NAME }}</h2>
+				<p>{{ category.DESCRIPTION }}</p>
+				<a href="/loja/categoria/{{ category.ID }}">
+					Ver produtos
+				</a>
+			</div>
+		{% endfor %}
+	</div>
 {% endblock %}
