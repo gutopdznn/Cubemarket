@@ -3,6 +3,14 @@ Class Controller
 {
 	public $assignedValues = [];
 
+	public function __construct()
+	{
+		$this->assign([
+			'assets' => Url::getAssetsPath(),
+			'title' => 'CubeMarket',
+		]);
+	}
+
 	public function loadModel($model)
 	{
 		$path = 'models/' . ucfirst($model) . 'Model.php';
@@ -16,11 +24,6 @@ Class Controller
 
 	public function view($path)
 	{
-		$this->assign([
-			'assets' => URL::getAssetsPath(),
-			'title' => 'CubeMarket',
-		]);
-
 		$loader = new Twig_Loader_Filesystem('views');
 		$twig = new Twig_Environment($loader);
 

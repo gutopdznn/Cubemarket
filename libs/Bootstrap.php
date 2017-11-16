@@ -32,10 +32,9 @@ class Bootstrap {
 	}
 
 	protected function _loadExistingController(){
-		$file = 'controllers/'.$this->_url[0].'.php';
 		if(file_exists($file)){
 			require $file;
-			$this->_controller = new $this->_url[0]();
+			$this->_controller = new $this->_url[0];
 			$this->_controller->loadModel($this->_url[0]);
 		} else {
 			return ErrorHandler::callError('404');
