@@ -16,22 +16,25 @@
 	<title>{{ title }} - {{ page.title }}</title>
 </head>
 <body>
-	<header>
+	<section class="header">
 		<div class="container">
-			<img src="https://i.imgur.com/NiIVrxp.png" alt="Minha logo">
-			<nav>
+			<div class="header__logo">
+				<img src="https://i.imgur.com/NiIVrxp.png" alt="Minha logo">
+			</div>
+			<nav class="header__menu">
 				<ul>
-					<li><a href="/">Início</a></li>
-					<li><a href="/loja">Loja</a></li>
+					<li class="header__menu--item"><a href="/"><i class="fa fa-fw fa-home"></i> Início</a></li>
+					<li class="header__menu--item"><a href="/loja"><i class="fa fa-fw fa-shopping-basket"></i> Loja</a></li>
+					<li class="header__menu--item"><a href="/loja"><i class="fa fa-fw fa-newspaper-o"></i> Notícias</a></li>
 				</ul>
 			</nav>
 		</div>
-	</header>
+	</section>
 	{% block content %}
 	{% endblock %}
 	<section class="footer">
 		<div class="container">
-			
+
 		</div>
 	</section>
 </body>

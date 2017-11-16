@@ -6,6 +6,9 @@
 		content: ""
 		display: table
 		clear: both
+	&:before
+		content: ""
+		display: table
 	@media (min-width: 768px)
 		width: 750px
 
@@ -14,3 +17,17 @@
 
 	@media (min-width: 1200px)
 		width: 1170px
+
+=cf
+	&:after
+	content: ""
+	display: table
+	clear: both
+
+=e($element)
+	&__#{$element}
+		@content
+
+=m($modifier)
+	&--#{$modifier}
+		@content

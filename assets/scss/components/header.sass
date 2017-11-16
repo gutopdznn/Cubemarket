@@ -1,2 +1,29 @@
-header
+.header 
 	background: url('https://i.imgur.com/8IYtq2W.jpg')
+	
+	+e('logo')
+		+cf
+		img
+			padding: 40px 0
+			max-width: 500px
+			max-height: 250px
+			float: left
+	
+	+e('menu')
+		background: #F4F5F7
+		margin-bottom: 20px
+		padding: 8px
+		border-radius: 5px
+		+m('item')
+			list-style-type: none
+			display: inline-block
+			border-radius: 5px
+			a
+				display: block
+				color: #42526E
+				padding: 16px
+				text-transform: uppercase
+				font-weight: bold
+				font-size: 14px
+				&:hover
+					background: rgba(9,30,66,.04)
