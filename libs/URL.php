@@ -9,4 +9,9 @@ Class URL
 	{
 		return '/assets/';
 	}
+	public static function getAtualUrl()
+	{
+		$count = strlen($_SERVER['REQUEST_URI']);
+		return $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'] . '/';
+	}
 }

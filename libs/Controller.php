@@ -5,10 +5,7 @@ Class Controller
 
 	public function __construct()
 	{
-		$this->assign([
-			'assets' => URL::getAssetsPath(),
-			'title' => 'CubeMarket',
-		]);
+		$this->assign(['assets' => URL::getAssetsPath()]);
 	}
 
 	public function loadModel($model)

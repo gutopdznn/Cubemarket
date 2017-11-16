@@ -7,7 +7,6 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Bootstrap' => $baseDir . '/libs/Bootstrap.php',
-    'Chopstring' => $baseDir . '/libs/Chopstring.php',
     'Controller' => $baseDir . '/libs/Controller.php',
     'Cookie' => $baseDir . '/libs/Cookie.php',
     'ErrorHandler' => $baseDir . '/libs/ErrorHandler.php',
@@ -18,9 +17,6 @@ return array(
     'Model' => $baseDir . '/libs/Model.php',
     'Redirect' => $baseDir . '/libs/Redirect.php',
     'Session' => $baseDir . '/libs/Session.php',
-    'Slug' => $baseDir . '/libs/Slug.php',
     'Token' => $baseDir . '/libs/Token.php',
-    'Url' => $baseDir . '/libs/Url.php',
-    'User' => $baseDir . '/libs/User.php',
-    'Validate' => $baseDir . '/libs/Validate.php',
+    'URL' => $baseDir . '/libs/URL.php',
 );

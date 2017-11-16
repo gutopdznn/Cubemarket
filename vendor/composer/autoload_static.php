@@ -32,7 +32,6 @@ class ComposerStaticInit67b9c3ddbf19706b3c6a8d8501de3b24
 
     public static $classMap = array (
         'Bootstrap' => __DIR__ . '/../..' . '/libs/Bootstrap.php',
-        'Chopstring' => __DIR__ . '/../..' . '/libs/Chopstring.php',
         'Controller' => __DIR__ . '/../..' . '/libs/Controller.php',
         'Cookie' => __DIR__ . '/../..' . '/libs/Cookie.php',
         'ErrorHandler' => __DIR__ . '/../..' . '/libs/ErrorHandler.php',
@@ -43,11 +42,8 @@ class ComposerStaticInit67b9c3ddbf19706b3c6a8d8501de3b24
         'Model' => __DIR__ . '/../..' . '/libs/Model.php',
         'Redirect' => __DIR__ . '/../..' . '/libs/Redirect.php',
         'Session' => __DIR__ . '/../..' . '/libs/Session.php',
-        'Slug' => __DIR__ . '/../..' . '/libs/Slug.php',
         'Token' => __DIR__ . '/../..' . '/libs/Token.php',
-        'Url' => __DIR__ . '/../..' . '/libs/Url.php',
-        'User' => __DIR__ . '/../..' . '/libs/User.php',
-        'Validate' => __DIR__ . '/../..' . '/libs/Validate.php',
+        'URL' => __DIR__ . '/../..' . '/libs/URL.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
