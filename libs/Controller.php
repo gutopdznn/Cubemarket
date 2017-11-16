@@ -6,7 +6,7 @@ Class Controller
 	public function __construct()
 	{
 		$this->assign([
-			'assets' => Url::getAssetsPath(),
+			'assets' => URL::getAssetsPath(),
 			'title' => 'CubeMarket',
 		]);
 	}

@@ -1,9 +1,13 @@
 {
-	"name": "Rezd",
+	"name": "Cubemarket",
 	"authors": [
 		{
 			"name": "Gustavo Rezende",
 			"email": "gurezends@gmail.com"
+		},
+		{
+			"name": "Deus",
+			"email": "contato@deus.ceu"
 		}
 	],
 	"autoload": {
