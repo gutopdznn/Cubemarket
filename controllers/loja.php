@@ -39,6 +39,8 @@ Class Loja extends Controller
 			'products' => $this->model->getProductsByCategory($id),
 		]);
 
+		$this->view('loja.categoria');
+
 	}
 
 }

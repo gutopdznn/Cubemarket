@@ -1,0 +1,14 @@
+{% extends 'layouts/default.twig' %}
+
+{% block content %}
+	<h1>Loja</h1>
+	{% for product in products %}
+		<div class="product">
+        	<h2>{{ product.NAME }}</h2>
+        	<p>{{ product.DESCRIPTION }}</p>
+        	<a href="/loja/produto/{{ product.ID }}">
+        		Comprar
+        	</a>
+		</div>
+    {% endfor %}
+{% endblock %}

@@ -5,6 +5,16 @@ Class LojaModel extends Model
 	{
 		parent::__construct();
 	}
+
+	public function categoryExists($id)
+	{
+		if($this->select('cube_categories', ['ID', '=', $id])->count() > 0)
+		{
+			return true;
+		}
+		return false;
+	}
+
 	public function getCategories()
 	{
 		return $this->select('cube_categories')->results();
@@ -12,7 +22,7 @@ Class LojaModel extends Model
 
 	public function getCategory($id)
 	{
-		return $this->select('cube_categories', ['id', '=', $id])->first();
+		return $this->select('cube_categories', ['ID', '=', $id])->first();
 	}
 
 	public function getProductsByCategory($id)
