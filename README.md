@@ -1,5 +1,6 @@
-# Cubemarket
-Aquele que veio pra falir com Mineshop, Minemarket e Minepag, aqui a gente libera as fita de graça memo, salve.
+# Cubemarket Imcompleto
+
+Já tem uma base de produtos/categorias, páginação e algumas classes, só precisa ir desenvolvendo o resto, ainda não é utilizavel
 
 # Doações
 
